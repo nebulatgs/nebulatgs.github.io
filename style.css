@@ -107,7 +107,7 @@ section {
     justify-content: space-between;
     align-items: center;
     margin: 0 2rem 2rem;
-    padding: 1rem 3rem 3rem 2rem;
+    padding: 1rem 3rem 1rem 2rem;
     flex: 1 1 300px;
     /* align-items: flex-end; */
     text-decoration: none;
@@ -132,7 +132,7 @@ section {
 
 p {
     font-family: Roboto, Corbel, "Open Sans", sans-serif;
-    margin-top: 10px;
+    margin-bottom: 0;
     color: #888;
     flex-basis: 100%;
 }
