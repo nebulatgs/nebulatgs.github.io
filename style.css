@@ -2,7 +2,7 @@
 h1 {
     font-family: 'Inconsolata', monospace;
     font-weight: 200;
-    font-size: 3em;
+    font-size: 5em;
     filter: drop-shadow(0px 0px 4px #c8d6e5);
     color: #c8d6e5;
     /* grid-row: 2 / span 1; */
@@ -37,6 +37,10 @@ html {
 
 :root {
     box-sizing: border-box;
+}
+
+::selection {
+    background-color: #0984e3;
 }
 
 *,
@@ -92,6 +96,7 @@ section {
     grid-column: 2/ span 1;
     grid-row: 4 / span 1;
     display: flex;
+    gap: 2rem;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -106,7 +111,7 @@ section {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 0 2rem 2rem;
+    /* margin: 0 2rem 2rem; */
     padding: 1rem 3rem 1rem 2rem;
     flex: 1 1 300px;
     /* align-items: flex-end; */
@@ -125,6 +130,10 @@ section {
 }
 
 .tile:hover {
+    background-color: #101015;
+}
+
+.tile:active:hover {
     transform: translate(5px, 5px);
     box-shadow: unset;
     cursor: pointer;
@@ -149,7 +158,7 @@ h3 {
 
 header {
     /* margin-bottom: 5%; */
-    margin: 4% 0 2% 0;
+    margin: 1% 1% 4% 1%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
