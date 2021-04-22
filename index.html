@@ -10,6 +10,7 @@
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-9V4VE5NBKJ"></script>
+    <script src="ui.js"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -26,37 +27,66 @@
 </head>
 
 <body>
+    <div class="triangle"></div>
     <header>
-        <h1>offline.codes</h1>
-        <h4>random creations</h4>
+        <h1 id="mainHeader">offline.codes</h1>
+        <div>
+            <div>
+                <!-- <div id="modeToggle"></div>
+                <div id="modeToggle"></div>
+                <div id="modeToggle"></div>
+                <div id="modeToggle"></div> -->
+            </div>
+            <h2>random creations</h2>
+        </div>
     </header>
-    <h2>Simulations</h2>
     <section>
-        <a class="tile" href="https://evosim.offline.codes/">
-            <div>
-                <h3>Evosim</h3>
-                <p>A genetic cell simulation using WebAssembly (WIP)</p>
-            </div>
-            <img class="cardicon" src="evosim.svg" width="10%">
-        </a>
-        <a class="tile" href="https://offline.codes/antibiotic/">
-            <div>
-                <h3>Antibiotic Resistance</h3>
-                <p>A variant of Evosim that models antibiotic resistance</p>
-            </div>
-            <img class="cardicon" src="evosim.svg" width="10%">
-        </a>
+        <h2>Simulations</h2>
+        <div class="cardBox">
+            <a class="card" href="https://evosim.offline.codes">
+                <span>
+                <h3>
+                    Evosim
+                </h3>
+                <p>
+                    A genetic simulation using WebAssembly (WIP).
+                </p>
+                </span>
+                <div class="arrow"></div>
+            </a>
+
+            <a class="card" href="https://offline.codes/antibiotic">
+                <span>
+                <h3>
+                    Antibiotic Resistance
+                </h3>
+                <p>
+                    A version of Evosim that models antibiotic resistance.
+                </p>
+                </span>
+                <div class="arrow"></div>
+            </a>
+        </div>
     </section>
-    <h2>Other</h2>
     <section>
-        <a class="tile" href="https://github.com/nebulatgs">
-            <div>
-                <h3>Github</h3>
-                <p>The source code for all my projects</p>
-            </div>
-            <img class="cardicon" src="github.svg" width="10%">
-        </a>
+        <h2>Other</h2>
+        <div class="cardBox">
+            <a class="card accentCard" href="https://github.com/nebulatgs">
+                <span>
+                <h3>
+                    Github
+                </h3>
+                <p>
+                    The source code for all my projects.
+                </p>
+                </span>
+                <div class="arrow"></div>
+            </a>
+        </div>
     </section>
+    <footer>
+        <p>My source code can be found <a href="https://github.com/nebulatgs/nebulatgs.github.io" target="_blank" rel="noopener noreferrer">here.</a></p>
+    </footer>
 </body>
 
 </html>
