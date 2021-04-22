@@ -240,6 +240,10 @@ a.card:active {
     filter: drop-shadow(8px 8px 0px #8D98A7);
 }
 
+.accentCard:hover .arrow {
+    filter: drop-shadow(8px 8px 0px var(--green-accent));
+}
+
 .arrow:before {
     content: '';
     position: absolute;
