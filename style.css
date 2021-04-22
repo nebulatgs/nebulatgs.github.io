@@ -321,7 +321,7 @@ footer>p>a:hover {
     border-radius: 10%;
 } */
 
-@media (max-width: 100em) {
+@media (max-width:50rem) {
     header>h1 {
         transform: none !important;
     }
@@ -329,7 +329,42 @@ footer>p>a:hover {
         border: none !important;
         background-color: var(--dark);
         height: 100vh;
-        width: 100vw;
+        width: 100%;
+    }
+    #mainHeader {
+        position: absolute;
+        display: block;
+        font-size: calc(25px + (100 - 25) * ((100vw - 300px) / (1600 - 300)));
+        margin: none;
+        /* width: 100vw; */
+        z-index: -1;
+    }
+    header>div {
+        width: 100%;
+        margin: 0;
+        justify-content: flex-end;
+    }
+    header>div>div {
+        display: none;
+    }
+    header>div>h2 {
+        font-size: calc(15px + (100 - 15) * ((100vw - 300px) / (1600 - 300)));
+        margin-left: 50%;
+        margin-right: 5%;
+        max-width: 100vw;
+    }
+}
+
+@media (pointer:none),
+(pointer:coarse) {
+    header>h1 {
+        transform: none !important;
+    }
+    .triangle {
+        border: none !important;
+        background-color: var(--dark);
+        height: 100vh;
+        width: 100%;
     }
     #mainHeader {
         position: absolute;
